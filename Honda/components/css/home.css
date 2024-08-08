@@ -2,19 +2,78 @@ body{
     background-color: blueviolet;
 }
 
+.container{
+    margin: 0;
+    font-family: CustomFont2;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
 @font-face{
     font-family: 'CustomFont';
     color: rgb(51, 51, 51);
     src: url('../fonts/AvenirNext-DemiBold.otf') format('opentype');
 }
 
+@font-face{
+    font-family: 'CustomFont2';
+    color: rgb(51, 51, 51);
+    src: url('../fonts/AvenirNext-Bold.otf') format('opentype');
+}
+@font-face{
+    font-family: 'CustomFont3';
+    color: rgb(51, 51, 51);
+    src: url('../fonts/AvenirNext-Regular.otf') format('opentype');
+}
 #navbarNav{
-    font-family: CustomFont;
-    font-weight: 300px;
+    font-family: CustomFont2;
+    font-weight: 400px;
     font-style: normal;
-    font-size: 12.6px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.container:hover{
+    color: rgb(51, 51, 51);
+    cursor: pointer;
 }
  
+.line {
+    border-top: 2px solid black;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease; /* Añadimos transición para animaciones */
+}
+
+.menulines {
+    margin-right:10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+}
+
+.menulines.active #line1 {
+    transform:translate(0px ,8px);
+}
+
+.menulines.active #line3 {
+    transform:translate(0px , -8px);
+}
+
+.menulines.second-animation #line1 {
+    transform: rotate(45deg) translate(5.6px, 5.7px);
+}
+.menulines.second-animation #line2 {
+    transform: rotate(45deg);
+}
+
+.menulines.second-animation #line3 {
+    transform: rotate(-45deg) translate(5.6px, -5.7px);
+}
 .offcanvas-collapse {
     position: static;
     top: 0px;
@@ -43,3 +102,4 @@ body{
     vertical-align: text-top;
     margin: 0 10px 0 0;
 }
+
