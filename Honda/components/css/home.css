@@ -8,6 +8,9 @@ body{
     font-size: 13px;
     line-height: 20px;
 }
+header{
+    height: 60px;
+}
 
 
 @font-face{
@@ -102,4 +105,20 @@ body{
     vertical-align: text-top;
     margin: 0 10px 0 0;
 }
+.carousel-container {
+    max-width: 60rem; /* Ajusta este valor para reducir el ancho */
+    margin: 2rem auto; /* Espacio alrededor del carrusel y centrado */
+    padding: 0 1rem; /* Espacio interno a los lados si es necesario */
+}
 
+  
+  .carousel-item img {
+    width: 533px;
+    height: 1310px; /* Mantener la proporción de las imágenes */
+  }
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
