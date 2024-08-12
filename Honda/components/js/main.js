@@ -20,3 +20,17 @@ function toggleMenu() {
         menu.classList.remove('second-animation');
     }
 }
+
+const circles = document.querySelectorAll('.active-item i');
+  
+// Escuchar el evento de cambio de slide del carrusel
+document.getElementById('Honda-Carousel').addEventListener('slid.bs.carousel', function (event) {
+  // Remover la clase 'circle-active' de todos los círculos
+  circles.forEach(circle => circle.classList.remove('circle-active'));
+  
+  // Agregar la clase 'circle-active' al círculo correspondiente
+  circles[event.to].classList.add('circle-active');
+});
+
+// Inicialmente, agregar la clase 'circle-active' al primer círculo
+circles[0].classList.add('circle-active');
