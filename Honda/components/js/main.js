@@ -23,14 +23,12 @@ function toggleMenu() {
 
 const circles = document.querySelectorAll('.active-item i');
   
-// Escuchar el evento de cambio de slide del carrusel
-document.getElementById('Honda-Carousel').addEventListener('slid.bs.carousel', function (event) {
-  // Remover la clase 'circle-active' de todos los círculos
-  circles.forEach(circle => circle.classList.remove('circle-active'));
-  
-  // Agregar la clase 'circle-active' al círculo correspondiente
-  circles[event.to].classList.add('circle-active');
-});
+  document.getElementById('Honda-Carousel').addEventListener('slid.bs.carousel', function (event) {
+    circles.forEach(circle => {
+      circle.classList.remove('active-bullet');
+    });
+    
+    circles[event.to].classList.add('active-bullet');
+  });
 
-// Inicialmente, agregar la clase 'circle-active' al primer círculo
-circles[0].classList.add('circle-active');
+  circles[0].classList.add('bi-circle-fill');
