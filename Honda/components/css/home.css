@@ -105,6 +105,25 @@ header{
     color: #cc0000;
 }
 
+.cta-buttonbis {
+    background-color: #cc0000;
+    padding: 7px;
+    color: white;
+    border-radius: 225px;
+    border: 2px #cc0000 solid;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: CustomFont4;
+    font-size: 14px;
+    line-height: 20px;
+    width: 210px;
+}
+.cta-buttonbis:hover {
+    background-color: #FFFFFF;
+    color: #cc0000;
+}
+
 
 
 .container:hover{
