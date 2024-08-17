@@ -32,3 +32,5 @@ const circles = document.querySelectorAll('.active-item i');
   });
 
   circles[0].classList.add('bi-circle-fill');
+
+
