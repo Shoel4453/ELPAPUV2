@@ -10,22 +10,18 @@
 <body>
     
     <!-- NavBar -->
-
     <header style="height: 60px;">
-      <nav style="background-color: #ffffff; height: 60px;" class="navbar">
+      <nav style="background-color: #ffffff; height: 60px; position: fixed; top: 0; width: 100%; z-index: 1000;" class="navbar">
+    <div class="container containerbis" style="width: 129px; justify-content: left;">
+        <div class="menulines" style="padding-left: 10px" id="navbarSideCollapse" onclick="toggleMenu()">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <span id="openText" onclick="toggleMenu()" style="padding-left: 10px">MENU</span>
+    </div>
+</nav>
 
-          <div class="container containerbis" style="width: 129px; justify-content: left;">
-
-              <div class="menulines" style="padding-left: 10px" id="navbarSideCollapse" onclick="toggleMenu()">
-                  <div class="line" id="line1"></div>
-                  <div class="line" id="line2"></div>
-                  <div class="line" id="line3"></div>
-              </div>
-              
-              <span id="openText"  onclick="toggleMenu()" style="padding-left: 10px">MENU</span>
-            </div>
-
-        </nav>
 
         <div class="LogoContainer">
           <a class="logo" href="#"><img src="components/img/Honda_Logo.svg" width="164" height="35" alt=""></a>
@@ -63,8 +59,9 @@
         </div>
     </header>
 
-    <main>
 
+    <main>
+      <div id="dark" class="honda-menu-blocker"></div>
         <!--Carousel-->
         <div class="carousel-container" style="margin-top: 0; max-width: 100%; padding: 0;">
           <div id="Honda-Carousel" class="carousel slide" data-bs-ride="carousel">
@@ -109,7 +106,7 @@
         </div>
         
 
-        <div class="conteiner-circles" style="background-color: white; width: 100%; height: 54px; display: flex; justify-content: center; align-items: center;">
+        <div class="conteiner-circles" style="z-index: 10; background-color: white; width: 100%; height: 54px; display: flex; justify-content: center; align-items: center;">
           <div class="active-item">
             <button class="circle-style" type="button" data-bs-target="#Honda-Carousel" data-bs-slide-to="0" aria-label="Slide 1">
               <i class="bi bi-circle-fill active-bullet"></i>
@@ -130,7 +127,7 @@
 
         
         <div class="parent" style="position: relative;">
-          <div class="div1 caja caja-right" style="background-color: #007cc2;"> </div>
+          <div class="div1 caja caja-right" style="background-color: #007cc2;"></div>
           <div class="div2 caja caja-right" style="background-color: #cc0001;"> </div>
           <div class="div3 caja caja-bottom" style="background-color: #eeeeee;"> </div>
           <div class="div4 caja caja-left" style="background-color: #000000;"> </div>
@@ -138,6 +135,11 @@
           <div class="div6 caja caja-right" style="background-color: #cc0001;"> </div>
           <div class="div7 caja caja-left" style="background-color: #eeeeee;"> </div>
           <div class="div8 caja caja-top" style="background-color: #cc0001;"> </div>
+
+
+          <div class="divimg1 divimg" style="background: url('./components/img/Grid/homepage-brand-autos-desktop.avif')  50% 50% / cover no-repeat scroll transparent;"></div>
+          <div class="divimg2 divimg" style="background: url('./components/img/Grid/homepage-brand-powersports-desktop.avif')  50% 50% / cover no-repeat scroll transparent;"></div>
+
         </div>
   
 
@@ -254,9 +256,6 @@
           </div>
 
         </div> -->
-
-        
-
     </main>
     <footer>
         <p>&copy; 2024 Honda. Todos los derechos reservados.</p>

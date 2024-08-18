@@ -8,15 +8,26 @@ document.getElementById('openText').addEventListener('click', function () {
 
 function toggleMenu() {
     var menu = document.getElementById('navbarSideCollapse');
+    var dark = document.getElementById('dark');
+    var body = document.body;
+    
     menu.classList.toggle('active');
+    body.classList.toggle('menu-open');
+
+    dark.classList.toggle('is-show');
+
+
+    
+
+    // Desplazar al inicio de la página
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     if (menu.classList.contains('active')) {
-        // Esperar a que la primera animación termine antes de comenzar la segunda
+
         setTimeout(function() {
             menu.classList.add('second-animation');
-        }, 300); // Tiempo en milisegundos que corresponde a la duración de la primera animación
+        }, 300);
     } else {
-        // Eliminar la clase de la segunda animación inmediatamente si se desactiva
         menu.classList.remove('second-animation');
     }
 }
