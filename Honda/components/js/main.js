@@ -16,10 +16,6 @@ function toggleMenu() {
 
     dark.classList.toggle('is-show');
 
-
-    
-
-    // Desplazar al inicio de la página
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     if (menu.classList.contains('active')) {
@@ -43,5 +39,25 @@ const circles = document.querySelectorAll('.active-item i');
   });
 
   circles[0].classList.add('bi-circle-fill');
+
+
+
+  const divimgs = document.querySelectorAll('.divimg');
+
+  divimgs.forEach(divimg => {
+      const img = divimg.querySelector('img');
+  
+      divimg.addEventListener('mouseenter', () => {
+          img.classList.add('hovered');
+      });
+  
+      divimg.addEventListener('mouseleave', () => {
+          setTimeout(() => {
+              img.classList.remove('hovered');
+          }, 0);
+      });
+  });
+  
+
 
 
