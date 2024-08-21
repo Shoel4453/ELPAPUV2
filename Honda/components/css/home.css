@@ -11,10 +11,6 @@ body{
     font-size: 13px;
     line-height: 20px;
 }
-header{
-
-
-}
 
 .circle-active {
     color: red;
@@ -77,6 +73,11 @@ header{
 @font-face {
     font-family: 'CustomFont4';
     src: url('../fonts/AvenirNext-Medium.otf')  format('opentype');
+}
+@font-face {
+    font-family: 'CustomFont5';
+    src: url('../fonts/AvenirNext-Medium.otf')  format('opentype');
+    font-weight: 700;
 }
 
 
@@ -320,13 +321,6 @@ body.menu-open {
     object-position: top;   
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-}
-
 #picoazul::after{
     left: 16.66666666666667%;
     top: 7%;
@@ -416,4 +410,99 @@ footer {
     border-color: transparent transparent #cc0001 transparent;
     width: 0;
     z-index: 3;
+}
+footer {
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 40px 0;
+    font-family: CustomFont5;
+    font-size: 13px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column img {
+    max-width: 150px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #000000;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.icon-chevron-right:before {
+    content: "";
+}
+footer p {
+    color: #666;
+    font-size: 13px;
+    color: #666;
+
+}
+p {
+    margin: 0 0 10px;
+}
+
+footer h4 {
+    font-family: CustomFont2;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 16px !important;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Terminos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
