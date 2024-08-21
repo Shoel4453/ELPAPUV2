@@ -153,7 +153,7 @@ header{
     height: 100%;
     z-index: 0;
     transition: transform 0.5s ease-out, z-index 0s 0s;
-    transform: scale(1);
+    transform: scale(1.02);
     object-fit: cover;
 }
 
@@ -162,17 +162,17 @@ header{
     height: 100%;
     z-index: 0;
     transition: transform 0.5s ease-out, z-index 0s 0s;
-    transform: scale(1.07);
+    transform: scale(1.08);
 }
 
 .bugginggridelement{
     transition: transform 0.5s ease-out, z-index 0s 0s;
-    transform: scale(1);
+    transform: scale(1.02);
     z-index: 0;
 }
 .bugginggridelement:hover{
     transition: transform 0.5s ease-out, z-index 0s 0s;
-    transform: scale(1.07);
+    transform: scale(1.08);
 }
 
 
@@ -186,80 +186,14 @@ header{
 .divimg7 {grid-area: 4 / 2 / 4 / 2;}
 .divimg8 {grid-area: 4 / 3 / 4 / 5;}
 
-/* .div1 { grid-area: 1 / 1 / 2 / 2; z-index: 10;}
+.div1 { grid-area: 1 / 1 / 2 / 2; z-index: 10;}
 .div2 { grid-area: 1 / 4 / 2 / 5; z-index: 10;}
 .div3 { grid-area: 2 / 1 / 3 / 2; z-index: 10;}
 .div4 { grid-area: 2 / 6 / 3 / 7; z-index: 10;}
 .div5 { grid-area: 3 / 2 / 4 / 3; z-index: 10;}
 .div6 { grid-area: 4 / 1 / 5 / 2; z-index: 10;}
 .div7 { grid-area: 4 / 5 / 5 / 6; z-index: 10;}
-.div8 { grid-area: 4 / 6 / 5 / 7; z-index: 10;} */
-
-
-/* .caja-right::after {
-    content: "";
-    position: absolute;
-    top: 45%;
-    right: -12.5px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-.caja-left::after {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: -12.5px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-.caja-top::after {
-    content: "";
-    position: absolute;
-    top: -12.5px;
-    left: 45%;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-.caja-bottom::after {
-    content: "";
-    position: absolute;
-    bottom: -12.5px;
-    left: 45%;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-
-.div1.caja-right::after { border-left-color: #007cc2; }
-.div2.caja-right::after { border-left-color: #cc0001; }
-.div3.caja-bottom::after { border-top-color: #eeeeee; }
-.div4.caja-left::after { border-right-color: #000000; }
-.div5.caja-right::after { border-left-color: #cc0001; }
-.div6.caja-right::after { border-left-color: #cc0001; }
-.div7.caja-left::after { border-right-color: #eeeeee; }
-.div8.caja-top::after { border-bottom-color: #cc0001; } */
-
-
+.div8 { grid-area: 4 / 6 / 5 / 7; z-index: 10;}
 
 
 
@@ -393,3 +327,93 @@ footer {
     padding: 20px 0;
 }
 
+#picoazul::after{
+    left: 16.66666666666667%;
+    top: 7%;
+    content: "";
+    position: absolute;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent #007cc2;
+    width: 0;
+    z-index: 3;
+}
+
+#picorojo::after{
+    left: 66.66666666667%;
+    top: 7%;
+    content: "";
+    position: absolute;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent #cc0001;
+    width: 0;
+    z-index: 3;
+}
+
+#picoblanco::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    border-width: 14px;
+    border-style: solid;
+    border-color: #eeeeee transparent transparent transparent;
+    z-index: 3;
+}
+
+#piconegro::after{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 81.9%;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent #000000 transparent transparent;
+    z-index: 3;
+}
+
+#picorojodos::after{
+    left: 33.3%;
+    top: 60%;
+    content: "";
+    position: absolute;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent #cc0001;
+    width: 0;
+    z-index: 3;
+}
+
+#picorojotres::after{
+    left: 16.66666666666667%;
+    top: 83%;
+    content: "";
+    position: absolute;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent #cc0001;
+    width: 0;
+    z-index: 3;
+}
+#picoblancodos::after{
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: 65.3%;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent #eeeeee transparent transparent;
+    z-index: 3;
+}
+#picorojocuatro::after{
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    right: 7.666%;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent #cc0001 transparent;
+    width: 0;
+    z-index: 3;
+}
