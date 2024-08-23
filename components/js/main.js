@@ -57,7 +57,51 @@ const circles = document.querySelectorAll('.active-item i');
           }, 0);
       });
   });
+
+
+window.addEventListener('load', function() {
+    const elementosIniciales = document.querySelectorAll('.caja.initial-animation');
   
+    elementosIniciales.forEach(elemento => {
+      elemento.classList.add('visible');
+    });
+  });
 
 
+
+window.addEventListener('scroll', function() {
+    const elementos = document.querySelectorAll('.caja, .divimg');
+    const triggerBottom = window.innerHeight * 0.99; // 80% de la altura de la ventana
+  
+    elementos.forEach(elemento => {
+      const elementoTop = elemento.getBoundingClientRect().top;
+  
+      if (elementoTop < triggerBottom) {
+        elemento.classList.add('visible');
+      }
+    });
+  });
+
+
+  document.querySelectorAll('.boxvids').forEach(box => {
+    const video = box.querySelector('.background-video');
+    let timeoutId;
+  
+    box.addEventListener('mouseover', () => {
+      // Cancela cualquier temporizador previo
+      clearTimeout(timeoutId);
+      video.play();
+    });
+  
+    box.addEventListener('mouseout', () => {
+      // Programa la pausa del video después de 0.3 segundos
+      timeoutId = setTimeout(() => {
+        video.pause();
+        video.currentTime = 0; // Opcional: Reinicia el video al comienzo
+      }, 300); // 300 ms = 0.3 segundos
+    });
+  });
+  
+  
+  
 
