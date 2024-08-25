@@ -422,26 +422,32 @@ footer {
     font-size: 13px;
 }
 
-.footer-container {
+footer b {
+    line-height: 32px;
+    font-family: CustomFont4;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .footer-container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-}
+    
+} */
 
 .footer-column {
     flex: 1;
     margin: 0 20px;
+    font-family: CustomFont4;
 }
 
-.footer-column img {
-    max-width: 150px;
-}
-
-.footer-column h4 {
+/* .footer-column h4 {
     font-size: 18px;
     margin-bottom: 20px;
-}
+} */
 
 .footer-column ul {
     list-style: none;
@@ -453,22 +459,22 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-column ul li a {
+/* .footer-column ul li a {
     color: #000000;
     text-decoration: none;
     transition: color 0.3s;
-}
+} */
 
-.footer-column ul li a:hover {
+/* .footer-column ul li a:hover {
     color: #000000;
-}
+} */
 
 .social-icons a {
     display: inline-block;
     margin-right: 10px;
 }
 
-.social-icons a img {
+/* .social-icons a img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s;
@@ -476,7 +482,7 @@ footer {
 
 .social-icons a:hover img {
     transform: scale(1.1);
-}
+} */
 
 .icon-chevron-right:before {
     content: "";
@@ -491,13 +497,14 @@ footer p {
 p {
     margin: 0 0 10px;
 }
-
+footer h4 {
+    color: #666;
+    font-size: 16px !important;
+}
 footer h4 {
     font-family: CustomFont2;
     color: #8f8f8f;
     text-transform: uppercase;
-    color: #666;
-    font-size: 16px !important;
 }
 
 .social-icons{
@@ -514,6 +521,58 @@ footer h4 {
     color: #337ab7;
 }
 
+.Ds{
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+
+}
+.Cookie{
+    font-family: CustomFont5;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #337ab7;
+    outline: 0;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center-;
+    text-decoration: none;
+}
+.ClickHere{
+    color: #337ab7;
+    font-family: CustomFont4;
+}
+
+.final-links{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    display: inline;
+}
+.f{
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 16px ;
+    font-family: CustomFont5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------
 .caja, .divimg {
     opacity: 0;
     transform: translateY(50px);
@@ -594,5 +653,6 @@ footer h4 {
   .boxvids:hover .background-image {
     opacity: 0;
   }
+
 
   
