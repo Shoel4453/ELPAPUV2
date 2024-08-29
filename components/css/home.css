@@ -81,6 +81,10 @@ body{
     src: url('../fonts/AvenirNext-Medium.otf')  format('opentype');
     font-weight: 700;
 }
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/Iconic-Bold-trial.ttf')  format('truetypefont');
+}
 
 
 
@@ -484,9 +488,12 @@ footer b {
     transform: scale(1.1);
 } */
 
-.icon-chevron-right:before {
-    content: "";
+.icon-chevron-right::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>');
+    display: inline-block; /* Asegura que el SVG se muestre correctamente */
+    vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
 }
+
 footer p {
     color: #666;
     font-size: 13px;
@@ -571,8 +578,6 @@ footer h4 {
 
 
 
-
----------------------------------
 .caja, .divimg {
     opacity: 0;
     transform: translateY(50px);
@@ -612,21 +617,21 @@ footer h4 {
 
 .containervids {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+    flex-wrap: wrap;
     width: 100%;
-    margin: 0; /* Elimina márgenes del contenedor */
-    padding: 0; /* Elimina rellenos del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
   .boxvids {
-    flex: 1; /* Hace que las cajas ocupen el espacio disponible */
-    min-width: 49%; /* Asegura que las cajas sean al menos el 49% del ancho del contenedor */
-    height: 475px; /* Altura de la caja */
+    flex: 1;
+    min-width: 49%;
+    height: 475px;
     position: relative;
     overflow: hidden;
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
-    margin: 0; /* Elimina márgenes de las cajas */
+    box-sizing: border-box; 
+    margin: 0;
   }
   
   .background-image,
@@ -643,7 +648,7 @@ footer h4 {
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    pointer-events: none; /* Evita que el video bloquee la interacción con el mouse */
+    pointer-events: none;
   }
   
   .boxvids:hover .background-video {
@@ -655,4 +660,27 @@ footer h4 {
   }
 
 
-  
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Puedes ajustar el color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    z-index: 2; /* Asegura que el texto esté sobre el video */
+    pointer-events: none; /* Evita que el texto interfiera con la interacción del video */
+}
+
+.overlay-text-p {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 20px;
+    font-family: CustomFont4;
+    color: white;
+    font-size: 15px;
+    z-index: 2;
+    text-align: center;
+    pointer-events: none;
+}
