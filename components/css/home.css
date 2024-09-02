@@ -83,7 +83,16 @@ body{
 }
 @font-face {
     font-family: 'iconfont';
-    src: url('../fonts/Iconic-Bold-trial.ttf')  format('truetypefont');
+    src: url('../fonts/Iconic-Bold-trial.ttf')  format('trutype');
+}
+
+@font-face {
+    font-family: 'hrc';
+    src: url('../fonts/hcr.ttf') format('trutype');
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.ttf') format('trutype');
 }
 
 
@@ -487,12 +496,20 @@ footer b {
 .social-icons a:hover img {
     transform: scale(1.1);
 } */
+/* 
+.icon-chevron-right::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>');
+    display: inline-block;
+    vertical-align: middle; 
+} */
+
 
 .icon-chevron-right::before {
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>');
-    display: inline-block; /* Asegura que el SVG se muestre correctamente */
-    vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
+    display: inline-block;
+    vertical-align: middle; 
 }
+
 
 footer p {
     color: #666;
