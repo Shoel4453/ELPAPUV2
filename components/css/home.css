@@ -682,10 +682,10 @@ footer h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Puedes ajustar el color del texto */
-    font-size: 24px; /* Tamaño del texto */
-    z-index: 2; /* Asegura que el texto esté sobre el video */
-    pointer-events: none; /* Evita que el texto interfiera con la interacción del video */
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .overlay-text-p {
