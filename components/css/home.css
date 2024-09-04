@@ -430,9 +430,8 @@ body.menu-open {
 footer {
     background-color: #eeeeee;
     color: #000000;
-    padding: 40px 0;
+    padding-top: 40px;
     font-family: CustomFont5;
-    font-size: 13px;
 }
 
 footer b {
@@ -443,80 +442,102 @@ footer b {
     vertical-align: middle;
 }
 
-/* .footer-container {
+.footer-container {
+    padding-top: 15px;
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     
-} */
-
-.footer-column {
+}
+.columnBrands {
     flex: 1;
     margin: 0 20px;
     font-family: CustomFont4;
 }
-
-/* .footer-column h4 {
-    font-size: 18px;
-    margin-bottom: 20px;
-} */
-
-.footer-column ul {
+.columnBrands ul {
     list-style: none;
     padding: 0;
-
+    margin-bottom: 31px;
 }
-
-.footer-column ul li {
+.columnBrands ul li {
     margin-bottom: 10px;
 }
 
-/* .footer-column ul li a {
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s;
-} */
+´
+.columnAboutMore{
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
 
-/* .footer-column ul li a:hover {
-    color: #000000;
-} */
+.columnAboutMore {
+    flex: 1;
+    margin: 0 15px;
+    font-family: CustomFont4;
+}
+.columnAboutMore ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 31px;
+}
+.columnAboutMore ul li {
+    margin-bottom: 10px;
+}
+´
+.RacingRecallsServices{
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.RacingRecallsServices{
+    flex: 1;
+    margin: 0 15px;
+    font-family: CustomFont4;
+}
+.RacingRecallsServices ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 31px;
+}
+
+.RacingRecallsServices ul li{
+    margin-bottom: 10px;
+}
+
+.h4{
+    margin-top: 37px;
+}
+
+
+
 
 .social-icons a {
+    padding-top: 50px;
     display: inline-block;
     margin-right: 10px;
 }
 
-/* .social-icons a img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
-}
-
-.social-icons a:hover img {
-    transform: scale(1.1);
-} */
-/* 
-.icon-chevron-right::before {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>');
-    display: inline-block;
-    vertical-align: middle; 
-} */
 
 
 .icon-chevron-right::before {
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>');
-    display: inline-block;
-    vertical-align: middle; 
+    display: inline-block; /* Asegura que el SVG se muestre correctamente */
+    vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
 }
-
 
 footer p {
     color: #666;
     font-size: 13px;
     font-family: CustomFont3;
     font-size: 13px;
-
+    margin: 0;
 }
 p {
     margin: 0 0 10px;
@@ -547,9 +568,11 @@ footer h4 {
 
 .Ds{
     font-size: 13px;
-    color: #666666;
+    color: #666;
     text-align: center;
-
+    padding: 15px;
+    margin: 16px;
+    text-align: center;
 }
 .Cookie{
     font-family: CustomFont5;
@@ -560,7 +583,6 @@ footer h4 {
     outline: 0;
     font-weight: 700;
     line-height: 32px;
-    text-align: center-;
     text-decoration: none;
 }
 .ClickHere{
@@ -573,8 +595,11 @@ footer h4 {
     padding-bottom: 30px;
     list-style: none;
     text-align: center;
-    margin: auto;
-    display: inline;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
 }
 .f{
     color: #337ab7;
@@ -583,6 +608,10 @@ footer h4 {
     font-family: CustomFont5;
 }
 
+.final-links li{
+    display: flex;
+    margin-right: 5px;
+}
 
 
 
